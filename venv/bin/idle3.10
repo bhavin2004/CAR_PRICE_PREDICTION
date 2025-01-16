@@ -1,5 +1,0 @@
-#!/home/shiv/Documents/Projects/Project5/car_price_prediction/venv/bin/python3.10
-
-from idlelib.pyshell import main
-if __name__ == '__main__':
-    main()
