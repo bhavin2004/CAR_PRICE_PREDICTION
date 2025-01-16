@@ -1,0 +1,13 @@
+prefix=/home/shiv/Documents/Projects/Project5/car_price_prediction/venv
+exec_prefix=/home/shiv/Documents/Projects/Project5/car_price_prediction/venv
+libdir=/home/shiv/Documents/Projects/Project5/car_price_prediction/venv/lib
+sharedlibdir=/home/shiv/Documents/Projects/Project5/car_price_prediction/venv/lib
+includedir=/home/shiv/Documents/Projects/Project5/car_price_prediction/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
