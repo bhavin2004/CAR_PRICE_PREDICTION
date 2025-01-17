@@ -95,7 +95,18 @@ Welcome to the **Car Price Prediction** project! This application predicts the p
 **Folder Structure**
 --------------------
 
-CAR_PRICE_PREDICTION/ ├── artifacts/ # Preprocessed data and model files ├── src/ # Source code │ ├── car_price_prediction/ │ │ ├── pipelines/ # Training and prediction pipelines │ │ └── utils/ # Utility functions ├── templates/ # HTML files ├── static/ # CSS files ├── app.py # Flask application ├── requirements.txt # Dependencies └── README.md # Project documentation
+CAR_PRICE_PREDICTION/
+├── artifacts/              # Preprocessed data and model files
+├── src/                    # Source code
+│   ├── car_price_prediction/
+│   │   ├── pipelines/      # Training and prediction pipelines
+│   │   └── utils/          # Utility functions
+├── templates/              # HTML files
+├── static/                 # CSS files
+├── app.py                  # Flask application
+├── requirements.txt        # Dependencies
+└── README.md               # Project documentation
+
 
 **Contact**
 -----------
