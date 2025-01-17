@@ -92,9 +92,9 @@ Welcome to the **Car Price Prediction** project! This application predicts the p
 5.  http://127.0.0.1:5000
     
 
-**Folder Structure**
---------------------
+
 ## Folder Structure
+--------------------
 
 CAR_PRICE_PREDICTION/  
 ├── artifacts/              # Preprocessed data and model files  
