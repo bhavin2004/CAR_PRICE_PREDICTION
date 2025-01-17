@@ -88,7 +88,7 @@ class DataTransformation():
             y_test = test_df['Price']
             test_df.to_csv('artifacts/x_test.csv',header=True,index=False)
 
-            # print(x_train.head())
+            print(x_train.head())
             x_train = preprocessor.fit_transform(x_train).toarray()
             x_test = preprocessor.transform(x_test).toarray()
             
