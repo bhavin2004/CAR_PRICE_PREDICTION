@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect
+import os
+from flask import Flask, render_template, request
 from src.car_price_prediction.pipelines.predicrion_pipeline import PredictionPipeline
 from src.car_price_prediction.pipelines.training_pipeline import Training_Pipeline
 import pandas as pd
@@ -53,7 +54,13 @@ def predict():
 
             # Prediction pipeline
             prediction_pipeline = PredictionPipeline()
-            predicted_price = prediction_pipeline.run_pipeline(name=name,company=company,year=year,kms_driven=kms_driven,fuel_type=fuel_type)
+            predicted_price = prediction_pipeline.run_pipeline(
+                name=name,
+                company=company,
+                year=year,
+                kms_driven=kms_driven,
+                fuel_type=fuel_type
+            )
 
             return render_template(
                 'result.html',
@@ -76,4 +83,5 @@ def predict():
     )
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 5000))  # Use PORT from environment, default to 5000
+    app.run(host="0.0.0.0", port=port, debug=True)
