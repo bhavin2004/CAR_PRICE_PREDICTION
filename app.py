@@ -28,8 +28,7 @@ def train():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     companies = sorted(car['company'].unique())
-    company = request.form('company')
-    car_models = sorted(car[car['company']==company]['name'].unique())
+    car_models = sorted(car['name'].unique())
     years = sorted(car['year'].unique(), reverse=True)
     fuel_types = car['fuel_type'].unique()
 
