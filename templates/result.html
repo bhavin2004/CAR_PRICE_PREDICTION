@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediction Result</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
-    <h1>Predicted Car Price</h1>
-    <p><strong>Car Name:</strong> {{ name }}</p>
-    <p><strong>Company:</strong> {{ company }}</p>
-    <p><strong>Year:</strong> {{ year }}</p>
-    <p><strong>Kilometers Driven:</strong> {{ kms_driven }}</p>
-    <p><strong>Fuel Type:</strong> {{ fuel_type }}</p>
-    <h2>Price: ₹{{ predicted_price }}</h2>
-    <a href="/predict">Predict Again</a>
+    <div class="form" style="font-size: large; box-shadow: 20px 28px 35px 13px rgba(5,3,5,0.69);">
+        <center><h1 style="color: black;">Prediction Result</h1>
+        <p><strong>Car Name:</strong> {{ name }}</p>
+        <p><strong>Company:</strong> {{ company }}</p>
+        <p><strong>Year:</strong> {{ year }}</p>
+        <p><strong>Kilometers Driven:</strong> {{ kms_driven }}</p>
+        <p><strong>Fuel Type:</strong> {{ fuel_type }}</p>
+        <h2>Predicted Price: ₹{{ predicted_price }}</h2>
+        <a href="/">Back to Home</a></center>
+    </div>
 </body>
+
 </html>
